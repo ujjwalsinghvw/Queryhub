@@ -1,0 +1,39 @@
+
+1. User APIs:
+
+   - POST /api/users/register: Register a new user.
+   - POST /api/users/login: Login a user and get JWT token.
+   - GET /api/users/{userId}: Get user profile information.
+   - PUT /api/users/{userId}: Update user profile information.
+
+
+
+2. Question APIs:
+
+   - GET /api/questions: Get a list of questions.
+   - POST /api/questions: Post a new question.
+   - GET /api/questions/{questionId}: Get details of a specific question.
+   - PUT /api/questions/{questionId}: Update a specific question.
+   - DELETE /api/questions/{questionId}: Delete a specific question.
+   
+   - GET /api/users/{userId}/questions: Get a list of questions posted by a specific user.
+
+- GET /api/questions?tag={tagname}: Search questions with a specific tag.
+
+
+
+3. Answer APIs:
+
+   - POST /api/answers: Post a new answer to any question.
+   - GET /api/answers/{answerId}: Get details of a specific answer.
+   - PUT /api/answers/{answerId}: Update a specific answer.
+   - DELETE /api/answers/{answerId}: Delete a specific answer.
+   - GET /api/questions/{questionId}/answers: Get answers for a specific question.
+   - GET /api/users/{userId}/answers: Get a list of answers posted by a specific user.
+
+
+
+
+   
+
+
