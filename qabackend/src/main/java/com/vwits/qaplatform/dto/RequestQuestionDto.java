@@ -22,7 +22,6 @@ public class RequestQuestionDto {
     private String title;
 
     @NotBlank(message = "question description is missing")
-    @Pattern(regexp = "\\D+", message = "description must be a string")
     private String description;
 
     private Boolean isAnonymous=false;

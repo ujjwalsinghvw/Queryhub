@@ -18,7 +18,6 @@ import org.hibernate.validator.constraints.Range;
 @NoArgsConstructor
 public class RequestAnswerDto {
     @NotBlank(message = "answer description is missing")
-    @Pattern(regexp = "\\D+", message = "answer description must be a string")
     private String description;
 
     private Boolean isAnonymous=false;

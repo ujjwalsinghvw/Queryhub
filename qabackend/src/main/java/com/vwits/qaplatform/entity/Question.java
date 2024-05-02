@@ -26,6 +26,8 @@ public class Question {
 
     private String title;
 
+    @Lob
+    @Column(columnDefinition = "LONGTEXT")
     private String description;
 
     private LocalDateTime postedAt;
