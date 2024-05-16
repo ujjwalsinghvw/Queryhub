@@ -17,4 +17,8 @@ public interface QuestionTagRepository extends JpaRepository<QuestionTag, Questi
     @Transactional
     void deleteByQuestionIdAndTagId(Long questionId, Long tagId);
     void deleteByQuestionId(Long questionId);
+
+    List<QuestionTag> findByTagIdIn(List<Long> tagIds);
+
+
 }

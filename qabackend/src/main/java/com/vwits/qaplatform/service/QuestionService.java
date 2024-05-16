@@ -112,7 +112,7 @@ public class QuestionService {
 
     }
 
-    private ResponseQuestionDto mapQuestionToResponseDto(Question question) {
+    public ResponseQuestionDto mapQuestionToResponseDto(Question question) {
         ResponseQuestionDto questionDto = new ResponseQuestionDto();
         BeanUtils.copyProperties(question, questionDto);
         List<ResponseAnswerDto> answers = question.getAnswers().stream()

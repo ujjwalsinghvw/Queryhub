@@ -29,6 +29,9 @@ public class AnswerService {
     @Autowired
     private QuestionRepository questionRepository;
 
+    public Answer getAnswerById(Long id){
+        return answerRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Answer not found with provided id"));
+    }
 
     public ResponseAnswerDto postAnswer(RequestAnswerDto requestAnswerDto) {
         User user = userRepository.findById(requestAnswerDto.getPostedBy())

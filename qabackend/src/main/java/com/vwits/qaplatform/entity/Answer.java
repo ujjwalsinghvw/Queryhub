@@ -23,7 +23,7 @@ public class Answer {
     private Long id;
 
     @Lob
-    @Column(columnDefinition = "LONGTEXT")
+    @Column(nullable = false, columnDefinition = "LONGTEXT")
     private String description;
 
     private LocalDateTime postedAt;
